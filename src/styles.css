@@ -1,0 +1,473 @@
+/*    CSS Reset  */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 1rem 2rem;
+    color: white;
+    height: 10vh;
+}
+
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-profile-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+
+.navbar-name {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    margin-right: 0.25em;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Body and Main Section Styles */
+body {
+    font-family: 'Comic Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #0f0e0e;
+    font-weight: 600;
+}
+
+
+
+
+/* Home Section */
+.home {
+    padding: 3rem 2rem;
+
+    color: #0f0e0e;
+    height: 90vh;
+    background-image: url('/public/images/home-background-img.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.home-content {
+    max-width: 800px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    text-align: left;
+
+
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.home-content h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.home-content p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px #ffffff;
+    /* White shadow */
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #222;
+    border: 2px solid #222;
+}
+
+.btn-outline:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+
+
+
+
+
+/* Contact  */
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    height: 80vh;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-message {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.contact-message a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #1a73e8;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #125ecf;
+}
+
+
+
+
+/*  Footer */
+.footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px 10px;
+    font-size: 0.95rem;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+
+
+
+/* Projects */
+
+.projects {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    width: 80%;
+    margin: 2em auto;
+}
+
+
+/*      ProjectCard           */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.project-info {
+    width: 60%;
+    border-right: 5px ridge blueviolet;
+    padding: 2em;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    margin-bottom: 1rem;
+}
+
+.tech-stack .tech {
+    background-color: #e0e0e0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.project-links a {
+    margin-right: 1rem;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.project-image {
+    display: flex;
+    align-items: center;
+}
+
+.project-image img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/*    Problem Solving  */
+
+
+/* src/index.css */
+
+/* Problem Solving Section */
+.problem-solving {
+    padding: 50px;
+    text-align: center;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.problem-solving-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.problem-card {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.problem-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.problem-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.problem-card a {
+    font-size: 14px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.problem-card a:hover {
+    text-decoration: underline;
+}

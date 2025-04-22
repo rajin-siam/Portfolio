@@ -1,0 +1,33 @@
+
+const projectsData = [
+
+    {
+      name: "ShopVerse Rest-API",
+      description: "This project, Shopverse, serves as the backend for an online e-commerce platform. It provides core functionalities including user management, product catalog exploration and order processing. The backend is built using Spring Boot which includes RESTful APIs to handle user authentication, product management, and order workflows, ensuring seamless interaction between the client and server.",
+      techStack: ["Java", "Spring Boot", "MySql"],
+      imageUrl: "/assets/shopverse-api-ss.png", 
+      liveLink: "https://myecommerce.com",
+      sourceLink: "https://github.com/myecommerce"
+    },
+
+    {
+      name: "Personal Finance Management",
+      description:  "A web-based application designed to track personal finances, manage transac-tions, and provide insights into spending patterns.users to schedule meetings with other users",
+      techStack: ["HTML", "CSS", "Java", "MySql"],
+      imageUrl: "assets/personal-finance-management-ss.png", 
+      liveLink: "https://myecommerce.com",
+      sourceLink: "https://github.com/rajin-siam/personal-finance-management"
+    },
+
+    {
+      name: "Inventory Management System",
+      description: " Created an Inventory Management System to help businesses easily track stock levels and know when to reorder, making inventory management simpler and more efficient.",
+      techStack: ["HTML", "CSS", "PhP", "MySql"],
+      imageUrl: "/assets/inventory-management-system-ss.png", 
+      liveLink: "https://myportfolio.com",
+      sourceLink: "https://github.com/myportfolio"
+    }
+  ];
+  
+  export default projectsData;
+  
