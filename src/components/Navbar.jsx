@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="profile-header">
         <img
-          src="./../public/images/myprofile.jpg"
+          src="/images/myprofile.jpg"
           alt="Profile"
           className="navbar-profile-img"
         />
