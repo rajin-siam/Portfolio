@@ -20,7 +20,7 @@ function Contact() {
   };
 
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <h2>Contact Me</h2>
       <p className="contact-message">
         Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. 
@@ -32,13 +32,13 @@ function Contact() {
         <a href="mailto:mdrajinmashrursiam@gmail.com" target="_blank" rel="noopener noreferrer">
           <FaEnvelope className="icon" />
         </a>
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener noreferrer">
+        <a href="https://linkedin.com/in/md-rajin-mashrur-siam" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="icon" />
         </a>
-        <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/rajin-siam" target="_blank" rel="noopener noreferrer">
           <FaGithub className="icon" />
         </a>
-        <a href="https://www.facebook.com/YOUR-FACEBOOK" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/rajinmashrur.siam/" target="_blank" rel="noopener noreferrer">
           <FaFacebook className="icon" />
         </a>
       </div>

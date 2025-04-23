@@ -164,7 +164,7 @@ p {
 
     color: #0f0e0e;
     height: 90vh;
-    background-image: url('/public/images/home-background-img.jpg');
+    background-image: url('./public/images/home-background-img.jpg');
     width: 100%;
     background-size: cover;
     background-position: left;
