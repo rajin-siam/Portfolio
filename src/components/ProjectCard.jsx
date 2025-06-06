@@ -12,6 +12,7 @@ function ProjectCard({ project }) {
           ))}
         </div>
         <div className="project-links mt-2">
+          {/*
           <a
             href={project.liveLink}
             target="_blank"
@@ -20,6 +21,7 @@ function ProjectCard({ project }) {
           >
             Live Demo
           </a>
+          */}
           <a
             href={project.sourceLink}
             target="_blank"
